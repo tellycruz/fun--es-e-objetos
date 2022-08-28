@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const aluno1 = {
+        nome: "Telly",
+        nota: [9, 6],
+      };
+      const aluno2 = {
+        nome: "Carla",
+        nota: [10, 7],
+      };
+
+      console.table(aluno1);
+      console.table(aluno2);
+
+      const turma = [aluno1, aluno2];
+
+      function media(nota1, nota2) {
+        return (nota1 + nota2) / 2;
+      }
+
+      const aluno1media = media(aluno1.nota[0], aluno1.nota[1]);
+      const aluno2media = media(aluno2.nota[0], aluno2.nota[1]);
+      const mediaSala = (aluno1media + aluno2media) / 2;
+
+      console.log(`A média de ${aluno1.nome} é: ${aluno1media}`);
+      console.log(`A média de ${aluno2.nome} é: ${aluno2media}`);
+      console.log(`A média geral da sala é ${mediaSala}`);
+    </script>
+  </body>
+</html>
+<!-- 3. Crie um objeto para colocar nome e duas notas. Atribua nome e
+duas notas para o primeiro objeto, que será nosso primeiro aluno.
+Agora crie mais um objeto para colocar informações do nosso
+segundo aluno. Mostre as informações de cada aluno no console.
+Mostre também a média do primeiro aluno e a média do segundo
+aluno. Por fim mostre a média desta turma de 2 alunos. -->

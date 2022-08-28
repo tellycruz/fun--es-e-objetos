@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let aluno = [
+        {
+          nome: "Julio",
+          idade: 19,
+          skills: ["typescript", "phyton", "html"],
+        },
+        {
+          nome: "Paula",
+          idade: 27,
+          skills: ["typescript", "php", "nodejs"],
+        },
+        {
+          nome: "Cássia",
+          idade: 33,
+          skills: ["angular", "php", "mysql"],
+        },
+        {
+          nome: "Catarina",
+          idade: 54,
+          skills: ["java", "angular", "phyton"],
+        },
+        {
+          nome: "César",
+          idade: 23,
+          skills: ["html", "mysql", "nodejs"],
+        },
+      ];
+
+      console.log(aluno);
+
+      function filtroskills(aluno, skills) {
+        const retorno = aluno.filter((value) => {
+          return value.skills.includes(skills);
+        });
+        console.log(retorno);
+      }
+
+      filtroskills(aluno, "angular");
+    </script>
+  </body>
+</html>
+<!-- 4. Crie cinco objetos JavaScript dentro de um Array contendo
+nome(texto), idade(número), skills (array), ou seja um total de cinco
+alunos. Agora crie uma função que receba estes cinco objetos e
+mais um parâmetro skill. Dependendo da skill enviada mostrar no
+console.log(), quais alunos têm a skill enviada por parâmetro,
+mostrar todo o objeto.
+Exemplo: Pedro, 24, [JavaScript, TypeScript, React]. Se mandar
+chamar a função enviando (alunos, “JavaScript”), precisa mostrar o
+Pedro e qual mais se encaixa nessa skill. -->
